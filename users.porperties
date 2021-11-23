@@ -1,0 +1,14 @@
+# 应用名称
+spring.application.name=users
+# 应用服务 WEB 访问端口
+server.port=9999
+
+spring.cloud.consul.port=8500
+spring.cloud.consul.host=localhost
+spring.cloud.consul.discovery.service-name=${spring.application.name}
+
+#策略选择，默认为轮询策略
+#products.ribbon.NFLoadBalancerRuleClassName=com.netflix.loadbalancer.RandomRule
+feign.hystrix.enabled=true
+
+
